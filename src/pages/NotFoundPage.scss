@@ -1,0 +1,44 @@
+$accent: #e94560;
+
+.notfound-page {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+  padding: 24px;
+}
+
+.notfound-code {
+  font-size: 8rem;
+  font-weight: 900;
+  color: $accent;
+  margin: 0;
+  line-height: 1;
+  opacity: 0.6;
+}
+
+.notfound-text {
+  font-size: 1.4rem;
+  color: #aaa;
+  margin: 0;
+}
+
+.notfound-btn {
+  margin-top: 8px;
+  padding: 12px 32px;
+  background: $accent;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+
+  &:hover {
+    background: #c73652;
+  }
+}

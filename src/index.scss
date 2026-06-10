@@ -1,0 +1,56 @@
+$bg-primary: #0d0d1a;
+$bg-secondary: #1e1e2e;
+$accent: #e94560;
+$text-primary: #f0f0f0;
+$text-secondary: #aaa;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-primary: #{$bg-primary};
+  --bg-secondary: #{$bg-secondary};
+  --accent: #{$accent};
+  --text-primary: #{$text-primary};
+  --text-secondary: #{$text-secondary};
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $bg-primary;
+  color: $text-primary;
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  font-family: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+
+  &-track {
+    background: $bg-primary;
+  }
+
+  &-thumb {
+    background: #333;
+    border-radius: 3px;
+
+    &:hover {
+      background: $accent;
+    }
+  }
+}
